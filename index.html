@@ -1,7 +1,53 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Minisha Blog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="images/SimpleBlog.css" type="text/css" />
+</head>
 <body>
-<h1>Hello World</h1>
-<p>Hosted with GitHub Pages</p>
+<div id="wrap">
+  <div id="header">
+    <h1 id="logo"><span class="gray"><font color="#ffffff">Minisha</font></span></h1>
+    <h2 id="slogan">Occam's Razor</h2>
+    <div id="searchform">
+      <form method="post" class="search" action="http://all-free-download.com/free-website-templates/">
+</form>
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li id="current"><a href="#"><span>Home</span></a></li>
+      
+      <li><a href="#"><span>About</span></a></li>
+    </ul>
+  </div>
+  <div id="content-wrap">
+    <div id="sidebar">
+      <h1>Database</h1>
+      <p>Postgress 9.5.2</p>
+    </div>
+    <div id="main"> <a name="TemplateInfo"></a>
+      <h1>Postgress 9.5.2 installation in redhat 6.6</h1>
+      <p><strong>Step 1: </strong>Add rpm image of postgress in to rpm repository with the command using the terminal</p>
+      <code>rpm -Uvh http://yum.postgresql.org/9.5/redhat/rhel-6-x86_64/pgdg-redhat95-9.5-2.noarch.rpm <br />
+      </code>
+      <p><strong>Step 2: </strong>Type in<strong>&nbsp;</strong>yum install postgresql95-server </p>
+      <p>If the above command throws 404 exception, edit the base url in the below file to a working url as shown </p>
+      <p><code>vim /etc/yum.repos.d/pgdg-95-redhat.repo</code></p>
+      <p><code>baseurl=https://download.postgresql.org/pub/repos/yum/9.5/redhat/rhel-6.6-$basearch </code></p>
+      <p><strong>Step 3: </strong>Initialize the database with the command: <em>service postgresql-9.5 initdb</em></p>
+      <p><strong>Step 4: </strong>Start postgress with the command:&nbsp;<em>service postgresql-9.5 start</em></p>
+      <p>At this point, if you type <em>su - postgres</em> you will get a bash console, in there type in <em>psql </em></p>
+      <p>Thats it, we are good to play with the database.</p>
+      <a name="SampleTags"></a>
+
+      <br />
+    </div>
+  </div>
+  <div id="footer">
+    <p> &copy; 2016 &nbsp; &nbsp; </p>
+  </div>
+</div>
 </body>
 </html>
