@@ -1,6 +1,7 @@
+
 <h1>
     Vim commands
-</h1>
+    (Draft)</h1>
 
 <ul>
     <li>
@@ -15,7 +16,7 @@
     </li>
     <li>To move to the end of the line and to put in insert move _ <font color="#00a48c">shift+a</font></li>
     <li>To delete a word _ <font color="#00a48c">d+w</font></li>
-    <li>To delete the whole line _ <font color="#00a48c">d</font></li>
+    <li>To delete the whole line _ <font color="#00a48c">d+d</font></li>
     <li>To delete the whole line from the cursor postion _ <font color="#00a48c">d+shift+$</font></li>
     <li>To the beginning of the line _ <font color="#00a48c">0</font></li>
     <li>To the end of the line _  <font color="#00a48c">shift+$</font></li>
@@ -24,7 +25,64 @@
     <li>To move to end of the word _  <font color="#00a48c">e</font></li>
     <li>To move to end of the number of words forward _  <font color="#00a48c">3e</font></li>
     <li>To delete number of words _ <font color="#00a48c">3+d+w or d+3+w</font></li>
-
+    <li>To undo all the changes in a line _ <font color="#00a48c">shift+u</font></li>
+    <li>To redo _ <font color="#00a48c">ctrl+r</font></li>
+    <li>To move a line around _ <font color="#00a48c">dd , p</font> (when it delete a line, it will not completely forget about the line it just deleted. It will put it in some kinda of a registery, so you could move the line where u want to paste the line and type p)</li>
+    <li>To replace a letter _ <font color="#00a48c">r </font>on the letter and then type the replacement letter</li>
+    <li>To change the word and to place you in insert mode _ <font color="#00a48c">ce </font></li>
+    <li>To change the whole line and to place u in inser mode _ <font color="#00a48c">c$</font></li>
+    <li>To change certain number of words _ <font color="#00a48c">c3w</font></li>
+    <li>To move to the bottom of the file _ <font color="#00a48c"> shift+g</font></li>
+    <li>To get information about line and column number _ ctrl+G</li>
+    <li>To go to specific line with line number _ 4+shift+G (will move the cursor to the 4th line)</li>
+    <li>To go the very start of the file _ gg</li>
+    <li>Search, /whattosearch<strong> n</strong> to move next, <strong>shift+n</strong> to move backwards, ctrl+o go back to where u came from,<strong> ctrl+I </strong>move forwards, ?whatosearch to search bottom up</li>
+    <li>shift+% to move back and forth between paranthesis</li>
+    <li>Substitution :s/old/new/g g for globally in a line, without g will replace only one occurence</li>
+    <li>#,#s/old/new/g to replace things within specific line range</li>
+    <li>%s/old/new/g to change in whole file</li>
+    <li>%s/old/new/gc  prompt before changing it</li>
+    <li>To execute external commands :!ls</li>
+    <li>To write to another file :w test.txt</li>
+    <li>You can chaing commands :!rm test.txt after removing the file if you want to list out the file again instead of pressing enter key type in the other command :!ls</li>
+    <li>To select text go to visual mode. When you are in visual mode the path of your cursor will be highlighted so that you could easily delete the selected ones for instance.</li>
+    <li>Selected text could be written to other files by typing :&lt;&gt;w test.txt</li>
+    <li>To reterive and merage files, place the cursor on where you want the text then press :r test.txt, this will place whatever is in test.txt in the cursor position</li>
+    <li>To paste the output from a command to the file :r !ls</li>
+    <li>To create a brand new line<strong> o</strong>, It will bring u to the new line right after your cursor placement and put you in insert mode</li>
+    <li>To add a line above <strong>shift+o</strong></li>
+    <li><strong>a</strong> to append text after the cursor position</li>
+    <li><strong>shift+r </strong> to go to replace mode</li>
+    <li>copy paste: select the text, press y to yank then p to paste it. To want a word press yw, y2w is to yank 2 words</li>
+    <li>Set option:  :set ic (to ignore case), /ignore will also highlight all of them ignorning cases
+        <ul>
+            <li>:set hls is(incrementalsearch) hls for higlight</li>
+            <li>to turn off features :set noic</li>
+            <li>set nohls nois</li>
+        </ul>
+    </li>
+    <li>To move between text file ctrl+w+w</li>
+    <li>:e test.txt to do autocompletion to get the file that starts with letter t to edit the file</li>
+    <li>f type the character you wanna go to, ; to go to the next match</li>
+    <li>To stop in the character right before <strong>t</strong> +the character to match</li>
+    <li>2fa to move the 2 matching character</li>
+    <li>to go to specific line 2000 shift+g</li>
+    <li>ctrl+F for moving forward through the document</li>
+    <li>ctrl+B for moving backward through the document</li>
+    <li>Ctrl+U to move half page backward</li>
+    <li>Ctrl+D to move hald pafe forward</li>
+    <li>Shift+M  to move to middle of the screen</li>
+    <li>Shift+H to move to head</li>
+    <li>Shift+L to move to the end of the screen</li>
+    <li>Shift+* to search for the current letter</li>
+    <li>Shift+V line selection</li>
+    <li>visual mode : norm i# to comment block of codes</li>
+    <li>:norm x to remove comments</li>
+    <li>ctrl+v to form visual block selection</li>
+    <li>ctrl +v , shift+i (for insert mode), shift+3, escape for commenting</li>
+    <li>shift+dot to move right indenting</li>
+    <li>shift+, to move left indenting</li>
+    <li>to indent whole file gg (to move to top) , =, shift+g</li>
 </ul>
 
 
